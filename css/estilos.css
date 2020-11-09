@@ -1,0 +1,66 @@
+body{
+	background:rgba(252, 155, 5, .3);
+}
+div p {
+	font-family: arial;
+}
+
+#header {
+	margin: auto;
+	width: 500px;
+	font-family: arial;
+}
+ul {
+	list-style: none;
+}
+.nave li a {
+    background-color: #000;
+    color:#fff;
+    text-decoration: none;
+    padding: 10px 15px;
+    display: block;
+}
+.nave li a:hover {
+	background-color: #434343;
+}
+.nave > li {
+	float: left;
+}
+.nave li ul {
+	display:none;
+	position: absolute;
+	min-width: 140px;
+}
+.nave li:hover > ul {
+	display: block;
+}
+/*para los submenus*/
+.nave li ul li {
+	position: relative;
+}
+.nave li ul li ul {
+	right: -140px;
+	top:0px;
+}
+img {
+	border-radius: 50px;
+}
+
+.uno {
+	width: 40%;
+	background:#fff;
+	padding: 1%;
+	border:5px solid #000 ;
+
+}
+.dos{
+	width: 40%;
+	background:#fff;
+	padding: 1%;
+	border:5px solid #000 ;
+	position: absolute;
+	top:30%;
+	bottom:;
+	right: ;
+	left:50%;
+}

@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html>
+ <head>
+ <title>matematicas </title>
+ </br>
+ <link rel="stylesheet" type="text/css" href="css/estilos.css">
+ </head>
+
+
+ <body>
+ 	<br>
+ 	<div id="header">
+ 		<ul class="nave">
+ 			<li><a href="index.html">inicio</a></li>
+ 			<li><a href="">temas</a>
+ 			 <ul>
+ 				 <li><a href="index1.html">teoria de gafos</a>
+ 				 	<ul>
+ 				 		<li><a target="_blank" href="https://www.youtube.com/watch?v=wKeg6tOG7qI&list=PLCXomnFXcmR3GjmE5mw4-WJuw8CLmBBBb">video relacionado</a></li>
+ 				 	</ul>
+ 				 </li>
+ 				 <li><a href="temados.html">tablas de verdad</a>
+ 				 	<ul>
+ 				 		<li><a target="_blank" href="https://www.youtube.com/watch?v=RY89xcvnevI">video relacionado</a></li>
+ 				 	</ul>
+ 				 </li>
+ 			 </ul>
+ 			</li>
+ 			<li><a href="">juego</a>
+ 			  <ul>
+ 			     <li><a target="_blank" href="https://mobbyt.com/videojuego/educativo/?Id=123742">juego para ver cuanto aprendiste sobre grafos</a></li>
+ 			     <li><a href="https://mobbyt.com/videojuego/educativo/?Id=130985">juego de tablas de verdad</a></li>
+              </ul>
+            </li>  
+ 		</ul>
+ 	</div>
+ </br>
+ </br>
+</br>
+</br>
+ <h1>GRAFOS</h1>
+ </b>
+ <h2>INDICE</h2>
+ <hr/>
+ <lu>
+ 	<li>1.TEORÍA DE GRAFOS</li>
+ 	<li>1.1TERMINOLOGÍA</li>
+ 	<li>1.1.1 GRAFO DIRIGIDO</li>
+ 	<li>1.1.2 GRAFO NO DIRIGIDO</li>
+ 	<li>1.1.3 ORDEN Y TAMAÑO</li>
+ 	<li>1.1.4 LADOS PARALELOS Y LAZOS</li>
+ 	<li>1.1.5 VALENCIA DE UN VÉRTICE</li>
+    <li>1.1.6 GRAFO COMPLETO</li>
+    <li>1.1.7 GRAFO REGULAR</li>
+    <li>1.1.8 GRAFO BIPARTITA</li>
+    <li>1.1.9 SUBGRAFO</li>
+    <li>1.1.10 GRAFO CONEXO</li>
+    <li>2. CAMINO Y CIRCUITOS</li>
+    <li>2.1 CAMINOS Y CIRCUITOS DE EULER</li>
+    <li>2.2 PASEO Y CAMINO DE HAMILTON</li>
+
+ </lu>
+
+ </br>
+ </br>
+ </br>
+ </br>
+ 
+ <h2>1.TEORÍA DE GRAFOS</h2>
+ <div>
+   <p>
+	En términos elementales podríamos definir un grafo como un conjunto de puntos(llamados elementos, vértices, nudos o nodos) con líneas que unen pares de vértice de ellas; en algunos libros se usa red como sinónimo de grafo. 
+    </br>
+     Representación gráfica de los elementos de un conjunto y las relaciones binarias sobre estos.</br>Un grafo G =(V, E, φ), consta de un conjunto V no vacío de vértices, un conjunto E delados del grafo y una funcionφ, la cual es una función de los lados del conjunto E a un conjunto de pares ordenados o no ordenados de los elementos (repetidos o no) de V. Donde los conjuntos V y E del grafo son finitos. Por su parte, la función se conoce como función de incidencia.
+     <img src="imagenes/ejemplo1.png" width="600" height="500">
+   </p>
+   </div>
+   <br>
+   	<h2>1.1 METODOLOGÍA</h2>
+   	<h3>1.1.1 GRAFO DIRIGIDO</h3>
+   	<div>
+   	<p>
+   	Un grafo dirigido (o dígrafo) G=(V, E) consta de un conjunto V de vértices y un conjunto E de lados, tal que cada e εE esta asociado a un único par ordenado de vértices i, j εV  y se escribe e=(i, j).</br>
+   	La dirección de un lado en un grafo dirigido se indica mediante una flecha dirigida.</br>
+   	<img src="imagenes/gradiri.png" width="500" height="500">
+   </p>
+   </div>
+   <br>
+   	<h3>1.1.2 GRAFO NO DIRIGIDO</h3>
+   	<div>
+   <p>
+   	Consta de un conjunto V de vértices y un conjunto E de lados tales que cada lado e está asociado a un par no ordenado de vértices.
+   <img src="imagenes/granodiri.png" width="800" height="500">
+   </p>
+   </div>
+   	<h3>1.1.3 ORDEN Y TAMAÑO</h3>
+   	<div>
+   <p>
+   	En un grafo (dirigido o no dirigido) G=(V, E), el numero de vértices de G, denotado como |V| o n, se denomina orden del grafo.</br>
+   	El numero de lados de G, denotado como |E| o m, se conoce como tamaño del grafo.
+   	<img src="imagenes/tamaño.png" width="800" height="500"></br>
+   	GRAFO FIITO ,INCIDENCIA Y ADYACENCIA.</br>
+   	<img src="imagenes/incidencia.png" width="800" height="600">
+   </p>
+   </div>
+   	<h3>1.1.4 LADOS PARALELOS Y LAZOS</h3>
+   	<div>
+   <p>
+   Cuando dos o mas lados distintos son incidentes al mismo par de vértices, estos reciben el nombre de lados paralelos.</br>Un lado de la forma (i, i) que inicia y termina en el mismo vértice se conoce como lazo.</br>
+   <img src="imagenes/lazos.png" width="900" height="600">
+   </p>
+   </div>
+   	<h3>1.1.5 VALENCIA DE UN VÉRTICE</h3>
+   	<div>
+   <p>
+   	Valencia (o grado) de un vértice, v, es igual al numero de lados incidentes en v, y se denota como δ(v).La suma de las valencias de todos los vértices de un grafo no dirigido, es igual al doble del numero de ladosEn un grafo dirigido se tendrán valencia de entrada y valencia de salida.En el caso de que un vértice sea adyacente consigo mismo, solo se considerara una vez.
+   	<img src="imagenes/valencia.png" width="900" height="600">
+   </p>
+   </div>
+
+   	<h3>1.1.6 GRAFO COMPLETO</h3>
+   	<div>
+   <p>
+   Si el grafo es simple con n vértices y existe un lado entre cada par de vértices distintos.Cada vértice de G debe ser adyacente con todos los demás vértices del grafo.</br>Se denota Kn</br>
+   <img src="imagenes/gracomple.png" width="900" height="600">
+   <img src="imagenes/propi.png" width="900" height="600">
+   <img src="imagenes/tabla.png" width="900" height="600">
+   </p>
+    </div>
+
+   	<h3>1.1.7 GRAFO REGULAR</h3>
+   	<div>
+   <p>
+   	Todo vértice v tiene la misma valenciaEl grafo recibe el nombre de n-regular <br>
+   	<img src="imagenes/graregular.png" width="900" height="600">
+   	<img src="imagenes/graregular1.png" width="900" height="600">
+   </p>
+    </div>
+
+   	<h3>1.1.8 GRAFO BIPARTITA</h3>
+   	<div>
+   <p>
+   	El conjunto de vértices V se puede dividir en dos conjuntos disjuntos no vacíos de vértices V1y V2.<BR>Cada vértice del conjunto V1sea adyacente en los vértices del conjunto V2.
+   	<BR>
+   	<img src="imagenes/grabipar.png" width="900" height="600"><BR>
+   	<B>GRAFO BIPARTITA COMPLETO</B><BR>
+   	Todos los vértices del conjunto V1son adyacentes en todos los vértices del conjunto V2.<BR>
+   	El grafo bipartita se denota como Km,n<BR>
+   	<img src="imagenes/grabipar1.png" width="900" height="600">
+   </p>
+   </div>
+
+   	<H3>1.1.9 SUBGRAFO</H3>
+   	<div>
+   <p>
+   	Un grafo G1=(V1, E1) es un subgrafo de G si E1está contenido en E y V1está contenido en V, tal que los lados de E1sean incidentes en los vértices de V1Para obtener un subgrafo a partir de un grafo, se requiere:1. Eliminar lados de G.2. Eliminar vértices de G, se deben borrar todos los lados que tengan por extremo a estos vértices.
+   	<br>
+   	<img src="imagenes/subgra.png" width="900" height="600">
+   </P>
+   </div>
+
+   	<h3>1.1.10 GRAFO CONEXO</h3>
+   	<div>
+   <p>
+   	Un grafo no dirigido; se dice que G es un grafo conexo si, para cualquier par de vértices i y j distintos entre si, existe un camino de i a j.<br>
+   	<img src="imagenes/graconexo.png" width="900" height="600">
+   </p>
+    </div>
+
+   	<h3>2. CAMINO Y CIRCUITOS</h3>
+   	<div>
+   <p>
+   	<B>Camino </B>sucesión de lados en la cual todos los lados son distintosentre si.<BR>
+   	<B>Camino simple </B>de longitud n de i a j, si es de la forma (v0, v1, v2, ... , vn), donde los vértices son distintos entre si.<BR>
+   	<B>Circuito </B>si es un camino de v a v.<BR>
+   	<B>Circuito simple</B> si es un circuito de la forma (v0, v1, v2, ... , vn), donde v0=vny los demás vértices son distintos entre si.<BR>
+   </p>
+    </div>
+
+   	<H3>2.1 CAMINOS Y CIRCUITOS DE EULER</H3>
+   	<div>
+   <p>
+   	<b>Camino (paseo) de Euler (o euleriano) </b>es un camino que incluye todos los lados de un grafo dado una y solo una vez.<BR>
+   	<b>Un circuito de Euler (o euleriano)</b> es un circuito que incluye todos los lados de un grafo dado una y solo una vez.<BR>
+   	<i>No importa la repetición de vértices, mientras no se repitan los lados.</i><br><br>
+   	<b>Condiciones para determinar la existencia de un paseo o circuito de Euler en un grafo no dirigido</b>
+   	<ol type="1">
+   		<li> Un grafo no dirigido G tiene un camino de Euler si y solo si es conexo y tiene cero o dos vértices de valencia impar.</li>
+   		<li>Un grafo no dirigido G tiene un circuito de Euler si y solo si es conexo y todo vértice de G tiene valencia par.</li>
+   		<li>Un grafo no dirigido G tiene un paseo de Euler de i ≠ j si y solo si i y j son los únicos vértices de valencia impar. Esta condición indica que el único paseo de Euler posible en el grafo es iniciar en uno de los vértices de valencia impar y terminar en el otro o viceversa.</li>
+   	</ol>
+   	<img src="imagenes/circu.png" width="900" height="600">
+   </P>
+   </div>
+
+   	<h3>2.2 PASEO Y CAMINO DE HAMILTON</h3>
+   	<div>
+   <p>
+   	<b>Camino hamiltoniano</b> es un camino que pasa a través de cada uno de los vértices de un grafo dado exactamente una vez.<br>
+   	<b>Un circuito hamiltoniano </b>es un circuito que pasa a través de cada uno de los vértices de un grafo dado exactamente una vez.<br>
+   	<i>Al recorrer todos los vértices del grafo, no es importante si no se recorren todos los lados del grafo</i><br>
+   	<h2><a target="_blank" href="https://www.youtube.com/watch?v=wKeg6tOG7qI&list=PLCXomnFXcmR3GjmE5mw4-WJuw8CLmBBBb">video relacionado</a></h2><br>
+   
+   	<img src="imagenes/hamil.png" width="900" height="600">
+    
+   </p>
+    </div>
+ </body>
+
+
+
+</html>
